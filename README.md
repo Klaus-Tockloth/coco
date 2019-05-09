@@ -36,5 +36,5 @@ WGS84  : World Geodetic System 1984 (same as EPSG:4326)
 
 ## Remarks
 
-* This package is a partial port from github.com/proj4js/mgrs (JavaScript).
-* See utility github.com/Klaus-Tockloth/coordconv for standalone program.
+* Partial ported from JavaScript [mgrs](https://github.com/proj4js/mgrs) library.
+* See utility [coordconv](https://github.com/Klaus-Tockloth/coordconv) for standalone program.
