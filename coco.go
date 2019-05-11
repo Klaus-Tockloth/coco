@@ -7,6 +7,7 @@ Description:
 
 Releases:
 - v0.1.0 - 2019/05/09 : initial release
+- v0.2.0 - 2019/05/10 : coord formatting changed
 
 Author:
 - Klaus Tockloth
@@ -104,21 +105,22 @@ String returns stringified UTM object.
 */
 func (utm UTM) String() string {
 
-	return fmt.Sprintf("%d %c %.0f %.0f", utm.ZoneNumber, utm.ZoneLetter, utm.Easting, utm.Northing)
+	return fmt.Sprintf("%d%c %.0f %.0f", utm.ZoneNumber, utm.ZoneLetter, utm.Easting, utm.Northing)
 }
 
 // LL defines coordinate in Longitude / Latitude
 type LL struct {
-	Lon float64
 	Lat float64
+	Lon float64
 }
 
 /*
-String returns stringified LL object.
+String returns stringified LL object (order according to ISO-6709, precision 0.11 meter).
+
 */
 func (ll LL) String() string {
 
-	return fmt.Sprintf("%.8f %.8f", ll.Lon, ll.Lat)
+	return fmt.Sprintf("%.6f %.6f", ll.Lat, ll.Lon)
 }
 
 // MGRS defines cordinate in MGRS/UTMREF
