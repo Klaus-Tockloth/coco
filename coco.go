@@ -8,6 +8,7 @@ Description:
 Releases:
 - v0.1.0 - 2019/05/09 : initial release
 - v0.2.0 - 2019/05/10 : coord formatting changed
+- v0.2.1 - 2019/05/12 : redundant comments removed
 
 Author:
 - Klaus Tockloth
@@ -36,13 +37,6 @@ Contact (eMail):
 
 Remarks:
 - This library is a partial port from "github.com/proj4js/mgrs" (JavaScript).
-- Possible coordinate conversions:
-  UTM -> Lon Lat
-  UTM -> MGRS
-  Lon Lat -> UTM
-  Lon Lat -> MGRS
-  MGRS -> UTM
-  MGRS -> Lon Lat
 - Build library:
   go install
 - Test library:
@@ -71,12 +65,12 @@ Supported conversions:
 
 Data objects:
   UTM  : ZoneNumber ZoneLetter Easting Northing
-  LL   : Longitude Latitude
+  LL   : Latitude Longitude
   MGRS : String
 
 Abbreviations:
-  Lon    : Longitude
   Lat    : Latitude
+  Lon    : Longitude
   MGRS   : Military Grid Reference System (same as UTMREF)
   UTM    : Universal Transverse Mercator
   UTMREF : UTM Reference System (same as MGRS)

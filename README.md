@@ -19,15 +19,15 @@ mgrs.ToLL()  : converts from MGRS to LL
 
 ``` TXT
 UTM  : ZoneNumber ZoneLetter Easting Northing
-LL   : Longitude Latitude
+LL   : Latitude Longitude
 MGRS : String
 ```
 
 ## Abbreviations
 
 ``` TXT
-Lon    : Longitude
 Lat    : Latitude
+Lon    : Longitude
 MGRS   : Military Grid Reference System (same as UTMREF)
 UTM    : Universal Transverse Mercator
 UTMREF : UTM Reference System (same as MGRS)
