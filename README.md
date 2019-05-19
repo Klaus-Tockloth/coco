@@ -38,3 +38,4 @@ WGS84  : World Geodetic System 1984 (same as EPSG:4326)
 
 * Partial ported from JavaScript [mgrs](https://github.com/proj4js/mgrs) library.
 * See utility [coordconv](https://github.com/Klaus-Tockloth/coordconv) for standalone program.
+* UTM format = zone number, zone letter (not hemisphere), easting, northing
